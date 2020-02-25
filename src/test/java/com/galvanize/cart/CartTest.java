@@ -73,22 +73,22 @@ public class CartTest {
        assertEquals(new ArrayList<String>(Arrays.asList("Coffee - 2", "Cream - 4")), cart.ItemQuantities());
      }
 
-//     @Test
-//     public void ShouldDisplayTheNamesAndPricesOfItemsOnSale() {
-//       Cart cart = new Cart();
-//
-//       Item item1 = new Item("Pie", 5.5, false);
-//       Item item2 = new Item("Coffee", 2.5, true);
-//       Item item3 = new Item("Donuts", 4.5, true);
-//
-//       cart.AddItem(item1);
-//       assertEquals(new ArrayList<String>(), cart.OnSaleItems());
-//
-//       cart.AddItem(item2);
-//       assertEquals(new ArrayList<String>(Arrays.asList("Coffee - $2.5")), cart.OnSaleItems());
-//
-//       cart.AddItem(item3);
-//       assertEquals(new ArrayList<String>(Arrays.asList("Coffee - $2.5", "Donuts - $4.5")), cart.OnSaleItems());
-//     }
+     @Test
+     public void ShouldDisplayTheNamesAndPricesOfItemsOnSale() {
+       Cart cart = new Cart();
+
+       Item item1 = new Item("Pie", 5.5, false);
+       Item item2 = new Item("Coffee", 2.5, true);
+       Item item3 = new Item("Donuts", 4.5, true);
+
+       cart.addItem(item1);
+       assertEquals(new ArrayList<String>(), cart.OnSaleItems());
+
+       cart.addItem(item2);
+       assertEquals(new ArrayList<String>(Arrays.asList("Coffee - $2.5")), cart.OnSaleItems());
+
+       cart.addItem(item3);
+       assertEquals(new ArrayList<String>(Arrays.asList("Coffee - $2.5", "Donuts - $4.5")), cart.OnSaleItems());
+     }
 
 }

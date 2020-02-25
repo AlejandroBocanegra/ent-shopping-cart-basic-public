@@ -49,6 +49,18 @@ public class Cart {
         return quantities;
     }
 
+    public List<String> OnSaleItems() {
+        List<String> onSaleItems = new ArrayList<>();
+
+        for (LineItem lineItem : items){
+            if (lineItem.item.isOnSale()){
+                onSaleItems.add(lineItem.item.getName()+" - $"+lineItem.item.getPrice());
+            }
+        }
+
+        return onSaleItems;
+    }
+
     class LineItem{
         Item item;
         int quantity;
