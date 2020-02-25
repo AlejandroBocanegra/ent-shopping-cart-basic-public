@@ -18,19 +18,19 @@ public class CartTest {
          assertEquals(cart.getTotalPrice(), 0, 0);
      }
 
-//     @Test
-//     public void ShouldAllowAddingItemsToCart() {
-//         Cart cart = new Cart();
-//
-//         Item item1 = new Item("Fruit", 4.50);
-//         Item item2 = new Item("Ice Cream", 5.50);
-//
-//         cart.AddItem(item1);
-//         assertEquals(4.50, cart.getTotalPrice());
-//
-//         cart.AddItem(item2);
-//         assertEquals(10.00, cart.getTotalPrice());
-//     }
+     @Test
+     public void ShouldAllowAddingItemsToCart() {
+         Cart cart = new Cart();
+
+         Item item1 = new Item("Fruit", 4.50);
+         Item item2 = new Item("Ice Cream", 5.50);
+
+         cart.AddItem(item1);
+         assertEquals(4.50, cart.getTotalPrice());
+
+         cart.AddItem(item2);
+         assertEquals(10.00, cart.getTotalPrice());
+     }
 
 //     @Test
 //     public void ShouldDisplayItemizedList() {
