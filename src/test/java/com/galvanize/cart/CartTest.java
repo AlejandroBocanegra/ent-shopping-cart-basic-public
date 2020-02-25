@@ -32,17 +32,17 @@ public class CartTest {
          assertEquals(10.00, cart.getTotalPrice());
      }
 
-//     @Test
-//     public void ShouldDisplayItemizedList() {
-//       Cart cart = new Cart();
-//       assertEquals(cart.ItemizedList(), new ArrayList<String>());
-//
-//       Item item1 = new Item("Coffee", 2.5);
-//       Item item2 = new Item("Donuts", 4.5);
-//       cart.AddItem(item1);
-//       cart.AddItem(item2);
-//       assertEquals(new ArrayList<String>(Arrays.asList("Coffee - $2.5", "Donuts - $4.5")), cart.ItemizedList());
-//     }
+     @Test
+     public void ShouldDisplayItemizedList() {
+       Cart cart = new Cart();
+       assertEquals(cart.ItemizedList(), new ArrayList<String>());
+
+       Item item1 = new Item("Coffee", 2.5);
+       Item item2 = new Item("Donuts", 4.5);
+       cart.AddItem(item1);
+       cart.AddItem(item2);
+       assertEquals(new ArrayList<String>(Arrays.asList("Coffee - $2.5", "Donuts - $4.5")), cart.ItemizedList());
+     }
 
 //     @Test
 //     public void ShouldAllowAddingMoreThanOneOfAGivenItemToTheCart() {

@@ -24,4 +24,14 @@ public class Cart {
     public void AddItem(Item item) {
         items.add(item);
     }
+
+    public List<String> ItemizedList() {
+        List<String> itemList = new ArrayList<>();
+
+        for (Item item : items){
+            itemList.add(item.toString());
+        }
+
+        return itemList;
+    }
 }
