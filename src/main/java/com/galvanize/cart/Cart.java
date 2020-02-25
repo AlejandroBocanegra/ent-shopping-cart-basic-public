@@ -39,6 +39,16 @@ public class Cart {
         return itemList;
     }
 
+    public List<String> ItemQuantities() {
+        List<String> quantities = new ArrayList<>();
+
+        for (LineItem lineItem : items){
+            quantities.add(lineItem.toString());
+        }
+
+        return quantities;
+    }
+
     class LineItem{
         Item item;
         int quantity;
@@ -46,6 +56,11 @@ public class Cart {
         public LineItem(Item item, int quantity) {
             this.item = item;
             this.quantity = quantity;
+        }
+
+        @Override
+        public String toString() {
+            return item.getName()+" - "+quantity;
         }
     }
 

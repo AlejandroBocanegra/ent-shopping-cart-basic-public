@@ -57,21 +57,21 @@ public class CartTest {
        assertEquals(31.00, cart.getTotalPrice());
      }
 
-//     @Test
-//     public void ShouldAllowYouToSeeHowManyOfEachItemIsInTheCart() {
-//       Cart cart = new Cart();
-//
-//       Item coffee = new Item("Coffee", 1.50);
-//       Item cream = new Item("Cream", 0.50);
-//
-//       assertEquals(new ArrayList<String>(), cart.ItemQuantities());
-//
-//       cart.AddItem(coffee, 2);
-//       assertEquals( new ArrayList<String>(Arrays.asList("Coffee - 2")), cart.ItemQuantities());
-//
-//       cart.AddItem(cream, 4);
-//       assertEquals(new ArrayList<String>(Arrays.asList("Coffee - 2", "Cream - 4")), cart.ItemQuantities());
-//     }
+     @Test
+     public void ShouldAllowYouToSeeHowManyOfEachItemIsInTheCart() {
+       Cart cart = new Cart();
+
+       Item coffee = new Item("Coffee", 1.50);
+       Item cream = new Item("Cream", 0.50);
+
+       assertEquals(new ArrayList<String>(), cart.ItemQuantities());
+
+       cart.addItem(coffee, 2);
+       assertEquals( new ArrayList<String>(Arrays.asList("Coffee - 2")), cart.ItemQuantities());
+
+       cart.addItem(cream, 4);
+       assertEquals(new ArrayList<String>(Arrays.asList("Coffee - 2", "Cream - 4")), cart.ItemQuantities());
+     }
 
 //     @Test
 //     public void ShouldDisplayTheNamesAndPricesOfItemsOnSale() {
