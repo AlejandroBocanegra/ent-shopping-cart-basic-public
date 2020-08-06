@@ -1,22 +1,20 @@
 package com.galvanize.cart;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.ArrayList;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 public class CartTest {
 
-    // @Test
-    // public void ShouldGetInitializedWithoutItemsOrTotalPrice() {
-    //     Cart cart = new Cart();
+    @Test
+    public void ShouldGetInitializedWithoutItemsOrTotalPrice() {
+        Cart cart = new Cart();
 
-    //     assertEquals(cart.getItems(), new ArrayList<Item>());
-    //     assertEquals(cart.getTotalPrice(), 0, 0);
-    // }
+        assertEquals(cart.getItems(), new ArrayList<Item>());
+        assertEquals(cart.getTotalPrice(), 0/*, 0*/);
+    }
 
 //     @Test
 //     public void ShouldAllowAddingItemsToCart() {
@@ -91,5 +89,4 @@ public class CartTest {
 //       cart.AddItem(item3);
 //       assertEquals(new ArrayList<String>(Arrays.asList("Coffee - $2.5", "Donuts - $4.5")), cart.OnSaleItems());
 //     }
-
 }
