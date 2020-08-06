@@ -10,13 +10,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CartTest {
 
-//     @Test
-//     public void ShouldGetInitializedWithoutItemsOrTotalPrice() {
-//         Cart cart = new Cart();
-//
-//         assertEquals(cart.getItems(), new ArrayList<Item>());
-//         assertEquals(cart.getTotalPrice(), 0, 0);
-//     }
+    // @Test
+    // public void ShouldGetInitializedWithoutItemsOrTotalPrice() {
+    //     Cart cart = new Cart();
+
+    //     assertEquals(cart.getItems(), new ArrayList<Item>());
+    //     assertEquals(cart.getTotalPrice(), 0, 0);
+    // }
 
 //     @Test
 //     public void ShouldAllowAddingItemsToCart() {
